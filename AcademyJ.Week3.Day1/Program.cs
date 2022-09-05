@@ -1,4 +1,5 @@
 ﻿using System;
+using AcademyJ.Week3.Day1.Lib;
 
 namespace AcademyJ.Week3.Day1
 {
@@ -48,7 +49,11 @@ namespace AcademyJ.Week3.Day1
 
             #endregion
 
+            #region Complex Number Test 
 
+            ComplexNumber c;
+
+            #endregion
 
             Console.ReadLine();
         }

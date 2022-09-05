@@ -49,7 +49,8 @@ namespace AcademyJ.Week3.Day1.SolarSystem
             // Salvare un nuovo file con la lista di tutti i pianeti (incluso quello nuovo)
 
             Planet newPlanet = ReadPlanetFromConsole();
-            planets.Add(newPlanet);
+            if(newPlanet != null)
+                planets.Add(newPlanet);
             WritePlanetsIntoFile(planets);
 
             Console.ReadLine();
@@ -85,12 +86,40 @@ namespace AcademyJ.Week3.Day1.SolarSystem
 
         private static Planet ReadPlanetFromConsole()
         {
+            var ukCulture = new CultureInfo("en-UK");
+            Console.Write("Inserire nome pianeta:\t");
+            string name = Console.ReadLine();
 
+            try
+            {
+                Console.Write("Inserire massa pianeta:\t");
+                float mass = float.Parse(Console.ReadLine(), ukCulture);
+
+                Console.Write("Inserire raggio pianeta:\t");
+                float radius = float.Parse(Console.ReadLine(), ukCulture);
+
+                Console.Write("Inserire distanza dal sole:\t");
+                float distanceFromSun = float.Parse(Console.ReadLine(), ukCulture);
+
+                Planet p = new Planet(name, mass, radius, distanceFromSun);
+                return p;
+            } catch(Exception e)
+            {
+                Console.WriteLine("Errore in lettura pianeta: " + e.Message);
+            }
+            return null;
         }
 
         private static void WritePlanetsIntoFile(IList<Planet> planets)
         {
+            string res = "";
+            foreach(var planet in planets)
+            {
+                string line = $"{planet.Name}\t\t| {planet.Mass} | {planet.Radius} | {planet.Position.X}\n";
+                res += line;
+            }
 
+            File.WriteAllText(@"data\newPlanets.txt", res);
         }
     }
 }
