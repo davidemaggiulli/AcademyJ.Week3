@@ -41,7 +41,13 @@ namespace AcademyJ.Week3.Day1
                 Console.WriteLine("Il secondo rettangolo ha area maggiore");
             }
 
+            Circle c1 = new Circle(10);
+            Circle c2 = new Circle();
+            Console.WriteLine($"Cerchio 1: Raggio: {c1.Radius}, Area: {c1.GetArea()}, Perimetro: {c1.GetPerimetro()}");
+            Console.WriteLine($"Cerchio 2: Raggio: {c2.Radius}, Area: {c2.GetArea()}, Perimetro: {c2.GetPerimetro()}");
+
             #endregion
+
 
 
             Console.ReadLine();
