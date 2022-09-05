@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyJ.Week3.Day1", "AcademyJ.Week3.Day1\AcademyJ.Week3.Day1.csproj", "{AB589F66-9B65-43F6-B122-1840CB75C917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyJ.Week3.Day1.SolarSystem", "AcademyJ.Week3.Day1.SolarSystem\AcademyJ.Week3.Day1.SolarSystem.csproj", "{97BF4DC0-36AE-415D-AB7C-A9822ECBCD6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AB589F66-9B65-43F6-B122-1840CB75C917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB589F66-9B65-43F6-B122-1840CB75C917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB589F66-9B65-43F6-B122-1840CB75C917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BF4DC0-36AE-415D-AB7C-A9822ECBCD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BF4DC0-36AE-415D-AB7C-A9822ECBCD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BF4DC0-36AE-415D-AB7C-A9822ECBCD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BF4DC0-36AE-415D-AB7C-A9822ECBCD6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
